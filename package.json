@@ -1,0 +1,37 @@
+{
+  "name": "pouch-db-server-container",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "bin":{ "start-server": "app"},
+  "scripts": {
+    "start": "node app --port=5984 --config=./config.json",
+    "build": "docker build . -t pouchdb-docker-image",
+    "image": "docker run --rm -it -p 5984:5984/tcp pouchdb-docker-image"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@gerhobbelt/nomnom": "^1.8.4-24",
+    "colors": "^1.0.3",
+    "corser": "~2.0.0",
+    "couchdb-log-parse": "^0.0.4",
+    "express": "^4.14.1",
+    "express-pouchdb": "4.2.0",
+    "http-pouchdb": "4.2.0",
+    "killable": "^1.0.0",
+    "mkdirp": "^0.5.0",
+    "object-assign": "^4.1.0",
+    "pouchdb-adapter-http": "^7.0.0",
+    "pouchdb-adapter-leveldb": "^7.0.0",
+    "pouchdb-adapter-leveldb-core": "^7.0.0",
+    "pouchdb-adapter-memory": "^7.0.0",
+    "pouchdb-adapter-node-websql": "^7.0.0",
+    "pouchdb-core": "^7.0.0",
+    "pouchdb-mapreduce": "^7.0.0",
+    "pouchdb-promise": "^6.4.1",
+    "pouchdb-replication": "^7.0.0",
+    "serve-favicon": "~2.5.0",
+    "tail": "^2.0.2",
+    "wordwrap": "1.0.0"
+  }
+}
