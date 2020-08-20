@@ -27,4 +27,5 @@ For test running the server before building a container:
 `npm start`
 
 # Contributors
+[pouchdb](https://pouchdb.com/)
 [pouchdb-server](https://github.com/pouchdb/pouchdb-server)
