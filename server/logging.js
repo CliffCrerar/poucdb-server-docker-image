@@ -69,7 +69,7 @@ module.exports = function tailLog(path) {
         var tail = new Tail(path);
         tail.on('line', function (line) {
           // double \n is necessary for the line to be processed.
-          parser.write(new Buffer(line + '\n\n', 'UTF-8'));
+          parser.write(Buffer.from(line + '\n\n', 'UTF-8'));
         });
         resolve(tail.unwatch.bind(tail));
       });
