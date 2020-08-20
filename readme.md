@@ -4,6 +4,12 @@
 1. Nodejs & Npm
 2. Docker
 
+---
+
+#### Install dependancies
+
+`npm i`
+
 #### Build image
 
 `npm run build`
@@ -11,6 +17,8 @@
 #### Run image
 
 `npm run image`
+
+---
 
 #### Test run
 
